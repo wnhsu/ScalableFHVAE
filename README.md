@@ -1,9 +1,11 @@
 # Scalable Factorized Hierarchical Variational Autoencoders
 This repository contains (refactored) codes to reproduce the core results from the two papers:
 * [Unsupervised Learning of Disentangled and Interpretable Representations from Sequential Data](https://arxiv.org/abs/1709.07902)
-* [Scalabe Factorized Hierarchical Variational Autoencoder Training]()
+* [Scalable Factorized Hierarchical Variational Autoencoder Training](https://arxiv.org/abs/1804.03201)
 
 Previous version of the codes can be found [here](https://github.com/wnhsu/FactorizedHierarchicalVAE)
+
+<img src="img/fhvae_teaser.png" width="900"/>
 
 If you find the code useful, please cite
 ```
@@ -13,11 +15,12 @@ If you find the code useful, please cite
   booktitle={Advances in Neural Information Processing Systems},
   year={2017},
 }
-@inproceedings{hsu2018scalable,
-  title={Scalabe Factorized Hierarchical Variational Autoencoder Training},
+@article{hsu2018scalable,
+  title={Scalable Factorized Hierarchical Variational Autoencoder Training},
   author={Hsu, Wei-Ning and Glass, James},
-  booktitle={},
-  year={},
+  journal={arXiv preprint arXiv:1804.03201},
+  year={2018},
+  arxiv={1804.03201},
 }
 ```
 
@@ -46,7 +49,7 @@ Kaldi before that version, you can install both Kaldi and Kaldi-Python by runnin
 make all
 ```
 
-# Usage
+# Getting Started
 Main source codes can be found in `./fhvae/`. `./scripts` contains runable python scripts.
 Example scripts for preprocessing are in `./examples/`. 
 

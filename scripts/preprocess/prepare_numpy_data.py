@@ -39,10 +39,10 @@ def main(wav_scp, np_dir, feat_scp, len_scp, reader, mapper):
             ff.write("%s %s\n" % (seq, np_path))
             fl.write("%s %s\n" % (seq, len(feat)))
 
-            if (i + 1) % 100 == 0:
-                print("processed %s audio files" % (i+1,))
-    print "processed total %s audio files; time elapsed = %.fs" % (
-            i + 1, time.time() - stime)
+            if (i + 1) % 1000 == 0:
+                print("%s files, %.fs" % (i+1, time.time() - stime))
+
+    print "processed total %s audio files; time elapsed = %.fs" % (i + 1, time.time() - stime)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)

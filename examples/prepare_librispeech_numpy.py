@@ -61,7 +61,7 @@ def compute_feature(name):
     cmd += ["%s/%s/feats.scp" % (args.out_dir, name)]
     cmd += ["%s/%s/len.scp" % (args.out_dir, name)]
     
-    p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    p = subprocess.Popen(cmd)
     if p.wait() != 0:
         raise RuntimeError("Non-zero (%d) return code for `%s`" % (p.returncode, " ".join(cmd)))
 
